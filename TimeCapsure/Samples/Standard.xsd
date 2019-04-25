@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Message">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Head">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ContentType" type="xs:string" />
+              <xs:element name="MessageID" type="xs:string" />
+              <xs:element name="CorrelationID" />
+              <xs:element name="Timestamp" type="xs:string" />
+              <xs:element name="ChannelID" type="xs:unsignedInt" />
+              <xs:element name="SysID" type="xs:string" />
+              <xs:element name="MsgType" type="xs:unsignedByte" />
+              <xs:element name="QueueName" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Body">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BusinessInfo" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Attachment">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Signature">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute name="Mode" type="xs:string" use="required" />
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

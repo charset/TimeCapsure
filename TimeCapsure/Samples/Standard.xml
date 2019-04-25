@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Message>
+  <Head>
+    <ContentType>application/xml</ContentType>
+    <MessageID>a0461db2-c040-4152-8f6d-34b92244f126</MessageID>
+    <CorrelationID></CorrelationID>
+    <Timestamp>2019-04-25 17:00:00.000</Timestamp>
+    <ChannelID>1103124</ChannelID>
+    <SysID>M33</SysID>
+    <MsgType>001</MsgType>
+    <QueueName>M33.001</QueueName>
+  </Head>
+  <Body>
+    <BusinessInfo><!--Put Code Here--></BusinessInfo>
+  </Body>
+  <Attachment>
+    <Signature Mode="SHA-256">FACE1234C0FFEE5678</Signature>
+  </Attachment>
+</Message>
