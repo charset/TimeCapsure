@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Config>
+  <!--应当实现F5或者多个Connection配置-->
+  <Connection HostName="page404.top" UserName="charset" Password="charset" VirtualHost="CHARSET" />
+  <QueueDefinition>
+    <Queue>
+      <Name>Q0</Name>
+      <Durable>True</Durable>
+      <Exclusive>False</Exclusive>
+      <AutoDelete>False</AutoDelete>
+      <ExchangeDefinition>
+        <Exchange>
+          <Name>direct_currency</Name>
+          <Type>topic</Type>
+        </Exchange>
+      </ExchangeDefinition>
+    </Queue>
+    <Queue>
+      <Name>Q1</Name>
+      <Durable>True</Durable>
+      <Exclusive>False</Exclusive>
+      <AutoDelete>False</AutoDelete>
+    </Queue>
+    <Queue>
+      <Name>Q2</Name>
+      <Durable>True</Durable>
+      <Exclusive>False</Exclusive>
+      <AutoDelete>False</AutoDelete>
+    </Queue>
+  </QueueDefinition>
+  <MessageValidator>
+    <Message Name="" Type="" Schema=""/>
+  </MessageValidator>
+</Config>
